@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Stats from './components/Stats';
 import Blog from './components/Blog';
 import ErrorPage from './components/ErrorPage';
+import Quizes from './components/Quizes';
 
 
 
@@ -15,12 +16,29 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
+
+
+        {
+          path: '/',
+          loader: async()=>{
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
+          element: <Home></Home>
+        },
         {
           path: '/home',
           loader: async()=>{
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
           element: <Home></Home>
+        },
+        {
+          path:'/home/:quizId',
+          loader: async({params}) =>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+          },
+          element:<Quizes></Quizes>
+          
         },
         {
           path: '/stats',

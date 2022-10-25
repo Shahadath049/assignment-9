@@ -4,7 +4,7 @@ import './Home.css'
 import Topic from './Topic';
 const Home = () => {
     const topics = useLoaderData();
-    console.log(topics.data);
+    
 
 
     return (
