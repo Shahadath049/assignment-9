@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
+    // console.log(topic)
     const { name, logo,id } = topic;
     return (
         <div>

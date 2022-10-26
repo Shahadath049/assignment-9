@@ -5,9 +5,10 @@ import { faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Quizz = ({ quiz }) => {
+const Quizz = ({ quiz,userId }) => {
     console.log(quiz)
     const { question, options, id, correctAnswer } = quiz;
+    
     const showButton = () => {
            toast.success(` Correct answer  : ${correctAnswer}` )
     }
@@ -31,7 +32,8 @@ const Quizz = ({ quiz }) => {
                 <div className='grid lg:grid-cols-2 sm:grid-cols-1 px-10 mb-5'>
                     {
                         options.map(option => <Option
-
+                            id={id}
+                            correctAnswer={correctAnswer}
                             option={option}
                         ></Option>)
                     }
