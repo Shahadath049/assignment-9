@@ -8,7 +8,7 @@ const Header = () => {
             <nav className=" shadow-xl relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-600 ">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
-                        <NavLink className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
+                        <NavLink className="text-3xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
                             Meta Quiz
                         </NavLink>
                         <button className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
@@ -20,17 +20,17 @@ const Header = () => {
                     <div className="lg:flex flex-grow items-center" id="example-navbar-warning">
                         <ul className="flex flex-col lg:flex-row list-none ml-auto">
                             <li className="nav-item">
-                                <NavLink to={"/home"} className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
+                                <NavLink to={"/home"} className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
                                     Home
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to={"/stats"} className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
+                                <NavLink to={"/stats"} className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75">
                                     stats
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to={"/blog"} className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
+                                <NavLink to={"/blog"} className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75">
                                     Blog
                                 </NavLink>
                             </li>
