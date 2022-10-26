@@ -8,9 +8,9 @@ const Quizes = () => {
     
      
     return (
-        <div className='container  mt-20 mx-auto'>
-            <h1 className='text-4xl text-center text-slate-500 font-bold'>Quizes of  {quizes.data.name}</h1>
-            <div className="container ">
+        <div className='  mt-20 mx-auto'>
+            <h1 className='text-4xl text-center text-slate-500 font-bold mb-10'>Quizes of  {quizes.data.name}</h1>
+            <div className="w-9/12 mx-auto">
                {
                 quizes.data.questions.map(quiz =><Quizz
                     quiz={quiz}

@@ -14,8 +14,8 @@ const Quizz = ({ quiz,userId }) => {
     }
 
     return (
-        <div className='m-10'>
-            <div className='border rounded-lg text-green-600 font-semibold shadow-lg h-auto m-auto w-auto'>
+        <div className='mb-10 mx-auto'>
+            <div className='  border rounded-lg text-green-600 font-semibold shadow-lg  mx-auto  '>
 
 
                 <div>
@@ -25,11 +25,11 @@ const Quizz = ({ quiz,userId }) => {
                     </div>
                
 
-                    <h2 className=' text-center lg:px-32 px-10 py-5 text-3xl'>Quiz : {question}</h2>
+                    <h2 className=' text-center lg:px-32 px-10 py-5 lg:text-4xl md:text-4xl text-2xl '>Quiz : {question}</h2>
 
                 </div>
 
-                <div className='grid lg:grid-cols-2 sm:grid-cols-1 px-10 mb-5'>
+                <div className=' grid lg:grid-cols-2 sm:grid-cols-1  mb-5 w-full'>
                     {
                         options.map(option => <Option
                             id={id}
