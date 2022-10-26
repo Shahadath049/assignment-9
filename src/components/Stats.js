@@ -18,12 +18,12 @@ const Stats = () => {
         
     ]
     return (
-        <div className=' mt-48 grid sm:grid-cols-2 grid-cols-1 px-20' >
+        <div className=' mt-48 grid sm:grid-cols-2 grid-cols-1 gap-5 px-20' >
             <div>
-                <h1 className=' text-center text-5xl font-bold text-gray-500'> This stats shows how many questions you have solved.</h1>
+                <h1 className=' text-center sm:text-6xl text-2xl font-bold text-gray-500'>This stats shows how many questions you have solved today.</h1>
             </div>
 
-            <div className=''>
+            <div >
             <ResponsiveContainer width="100%"  aspect={2}>
                 <BarChart
                     width={500}
