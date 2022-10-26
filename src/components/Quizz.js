@@ -1,11 +1,16 @@
 import React from 'react';
 import Option from './Option';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+import { faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Quizz = ({ quiz }) => {
     console.log(quiz)
     const { question, options, id, correctAnswer } = quiz;
+    const showButton = () => {
+           toast.success(` Correct answer  : ${correctAnswer}` )
+    }
 
     return (
         <div className='m-10'>
@@ -14,8 +19,11 @@ const Quizz = ({ quiz }) => {
 
                 <div>
                     <div className='text-right mr-5 mt-5'>
-                        <button ><FontAwesomeIcon className='text-3xl' icon={faEyeSlash} /></button>
+                        <button onClick={showButton} ><FontAwesomeIcon className='text-3xl' icon={faEyeSlash} /></button>
+                        <ToastContainer className="text-xl"></ToastContainer>
                     </div>
+               
+
                     <h2 className=' text-center lg:px-32 px-10 py-5 text-3xl'>Quiz : {question}</h2>
 
                 </div>
